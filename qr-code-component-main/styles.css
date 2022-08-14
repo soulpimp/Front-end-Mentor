@@ -68,3 +68,12 @@ figcaption p {
 footer {
     font-size: 0.75rem;
 }
+
+a.btn {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: hsl(var(--white));
+    border-radius: 5px;
+    color: hsl(var(--gray-blue));
+}
