@@ -1,0 +1,75 @@
+:root {
+    --white: 0, 0%, 100%;
+    --light-gray: 212, 45%, 89%;
+    --gray-blue: 220, 15%, 55%;
+    --drk-blue: 218, 44%, 22%;
+    --font-family: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 0.938rem; /* 15px */
+    background-color: hsl(var(--gray-blue));
+}
+
+.qr-code-component--container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+figure {
+    display: grid;
+    grid-template-rows: 287px 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: 327px;
+    border-radius: 20px;
+    background-color: hsl(var(--white));
+    padding: 20px;
+}
+
+figure img {
+    width: 287px;
+    height: 287px;
+    border-radius: 10px;
+    
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 5px 20px;
+}
+
+figcaption h3 {
+    font-weight: 700;
+}
+
+figcaption p {
+    font-weight: 400;
+}
+
+footer {
+    font-size: 0.75rem;
+}
+
+a.btn {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: hsl(var(--white));
+    border-radius: 5px;
+    color: hsl(var(--gray-blue));
+}
